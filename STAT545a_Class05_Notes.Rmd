@@ -1,0 +1,33 @@
+---
+title: "Class 545a Notes"
+author: "Adrian jones"
+date: "September 22, 2015"
+output: html_document
+---
+
+##Today we seem to be doign stuff in ggplot2
+
+We have homework due, thoughts about workflow, if document will be mostly code, do and R script and used the spiral bound book thing.  If the document is more chatty with a bit of code use markdown from the start.
+
+## Slides and things
+[Slides and the class](https://stat545-ubc.github.io/cm005_still-data-ggplot2-rmarkdown.html) 
+
+ggplot2 is the current package, ggplot is an old attempt.
+All about
+* Facilitate comparisons 
+* Identify trends
+
+ggplot2:  use facetting to put stuff in small subplots by some category.
+aes stands for asthetic mapping?
+add smooth stuff with geom_smooth
+allsorts of ways that ggplot makes things smoother
+
+Wrangle your data to make things easier generally speaking.  When people have a hard time with graphics, it is often because of trouble with data wrangling.
+* use data.frame
+* use factors
+* be boss of factors
+* keep data tidy
+* be happy to reshape data.
+
+factors can be moved around using `reorder()`
+####RStudio has cheetsheets under the help thing
