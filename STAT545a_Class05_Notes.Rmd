@@ -31,3 +31,32 @@ Wrangle your data to make things easier generally speaking.  When people have a 
 
 factors can be moved around using `reorder()`
 ####RStudio has cheetsheets under the help thing
+
+
+## ggplot2 tutorial work
+
+```{r}
+library(gapminder)
+library(ggplot2)
+
+str(gapminder)
+
+#this initialises the gapminder plot, we just add options with +
+p <- ggplot(gapminder, aes(x = gdpPercap, y = lifeExp))
+
+
+p + geom_point()
+
+#really we'd like that to be a log
+p + geom_point() + scale_x_log10()
+
+#Now we like the log10 thingy, so keep that as part of the plot for the future, leaving other stuff as still manipulable.
+
+p <- p + scale_x_log10()
+
+#We tell ggplot2 that we want an aesthetic of colour linked to the continents.
+
+p + geom_point(aes(colour = continent))
+
+```
+
